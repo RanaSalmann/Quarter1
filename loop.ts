@@ -85,16 +85,15 @@ for (let index=1; index<=100; index++)
     }
 }
 console.log("even Numbers",sum, list)
-*/
+
 //Leetcode
 //foreach loop builtin loop of TS
 //map -do-
 //filterloop -do-
-
-
-
-
-
-
-
-
+let userNames:string[]=["Salman","Noman","Usman","Haider","Mirha","Ayat"]
+for (let index=0;index<userNames.length;index++)
+{
+    const userName=userNames[index];
+    console.log(userName)
+}
+*/

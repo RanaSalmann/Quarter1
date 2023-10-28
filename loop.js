@@ -56,14 +56,43 @@ for (let index=1; index<=1000; index++)
     }
 }
 console.log("even Numbers",sum)
-*/
+
 //write TS programme that calculate sum of even number which repeat 1 to 1000 and make the list of even numbers?
-var sum = 0;
-var list = [];
-for (let index = 1; index <= 100; index++) {
-    if (index % 2 !== 0) {
-        sum = sum + index;
-        list.push(index);
+
+var sum:number=0;
+var list:number[]=[];
+for (let index=1; index<=100; index++)
+{
+    if(index % 2 ==0)
+    {
+    sum=sum+index;
+    list.push(index)
     }
 }
-console.log("even Numbers", sum, list);
+console.log("even Numbers",sum, list)
+
+//write TS programme that calculate sum of odd number which repeat 1 to 1000 and make the list of even numbers?
+
+var sum:number=0;
+var list:number[]=[];
+for (let index=1; index<=100; index++)
+{
+    if(index % 2 !==0)
+    {
+    sum=sum+index;
+    list.push(index)
+    }
+}
+console.log("even Numbers",sum, list)
+
+//Leetcode
+//foreach loop builtin loop of TS
+//map -do-
+//filterloop -do-
+let userNames:string[]=["Salman","Noman","Usman","Haider","Mirha","Ayat"]
+for (let index=0;index<userNames.length;index++)
+{
+    const userName=userNames[index];
+    console.log(userName)
+}
+*/ 
