@@ -103,31 +103,38 @@ var car:CarType=
     year: 2022,
 }
 console.log("Car data",car)
-*/
+
 //write a programme that print all the car all the company and year number from the list, make sure car is an object
-var carsData = [
+
+type CarType={company:string, year:number}
+
+var carsData:CarType[]=
+[
     {
-        company: "Ferrari",
-        year: 2005,
+        company:"Ferrari",
+        year:2005,
     },
     {
-        company: "BMW",
-        year: 2010,
+        company:"BMW",
+        year:2010,
     },
     {
-        company: "Ford",
-        year: 2015,
+        company:"Ford",
+        year:2015,
     },
     {
-        company: "Suzuki",
-        year: 2020,
+        company:"Suzuki",
+        year:2020,
     },
     {
-        company: "Honda",
-        year: 2025,
+        company:"Honda",
+        year:2025,
     }
-];
-for (let index = 0; index < carsData.length; index++) {
-    const car = carsData[index];
-    console.log(car.company);
+]
+
+for (let index=0;index<carsData.length;index++)
+{
+    const car=carsData[index];
+    console.log(car.company)
 }
+*/ 
